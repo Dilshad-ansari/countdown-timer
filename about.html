@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <title>Choose Wisely</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="cap.jpg" class="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+            <li><a href="index.html">HOME</a>&nbsp;</li>
+            <li><a href="#">MENU</a>&nbsp;
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="#">Schooling</a></li>
+                        <li class="sub-1"><a href="#">Graduation</a>
+                            <div class="sub-menu-2">
+                                <ul>
+                                    <li><a href="#">Course</a></li>
+                                    <li><a href="#">Top Colleges</a></li>
+                                    <li><a href="#">Job Opportunities</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sub-1"><a href="#">Post Graduation</a>
+                            <div class="sub-menu-2">
+                                <ul>
+                                    <li><a href="#">Course</a></li>
+                                    <li><a href="#">Top Colleges</a></li>
+                                    <li><a href="#">Job Opportunities</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">Jobs</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">REVIEWS</a>&nbsp;</li>
+            <li><a href="signUp.html">LOGIN/SIGNUP</a>&nbsp;</li>
+            <li> <a href="about.html">ABOUT</a>&nbsp;</li>
+        </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()" ></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+<!----about us content----->
+
+<section class="about-us">
+  
+    <div class="row">
+        <div class="about-col">
+            <h1>Our Mission</h1>
+            <p>The mission of our team is to guide students to choose the best for them. We are here to help you know about your true potential in the right field. We provide information about career options after graduation, post graduation in all fields. </p>
+            <a href="index.html" class="hero-button red-btn">Explore Now</a>
+        </div>
+        <div class="about-col">
+            <img src="career.jpg" alt="">
+        </div>
+    </div>
+
+</section>
+
+
+<!----Footer----->
+
+<section class="footer"> 
+    <h4>About Us</h4>
+    <p>Choose Wisely is a platform for students who wants to make their career in the field of their interest,
+        and for the parents who are curious and bit confused about their child's career. <br> Sign Up/Login for more info.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+        
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> by Pragya Singh</p>
+</section>
+
+
+
+
+<!-----Javascript for toggle menu---->
+   <script>
+       var navLinks = document.getElementById("navLinks");
+       function showMenu(){
+           navLinks.style.right = "0";
+       }
+       function hideMenu(){
+        navLinks.style.right = "-200px";
+       }
+   </script>
+
+</body>
+</html>
